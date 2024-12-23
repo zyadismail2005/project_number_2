@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f4f4f9;
+        color: #333;
+    }
+    
+    header {
+        background-color: #8e735b; /* بني فاتح */
+        color: white;
+        padding: 1px 0;
+        text-align: center;
+        border-radius: 25px; 
+    }
+    
+    header h1{
+        font-size: 50px;
+    }
+    
+    nav ul {
+        display: flex; /الكود more flexable/
+        justify-content : left; 
+        list-style: none; /* o بيشيل */
+    }
+    
+    nav ul li {
+        margin: 0 15px;
+    }
+    
+    nav ul li a {
+        color: white;
+        text-decoration: none;/بتشيل الخط الازرق/
+        font-size: 25px;
+    }
+    
+    nav ul li a:hover{
+        color: rgb(25, 25, 200);
+    }
+    
+    main {
+        padding: 40px;
+        text-align: center;
+    }
+    
+    .quick-recipes {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        display: grid;
+    }
+    
+    .recipe-item {
+        width: 200px;
+        text-align: center;
+        margin: 10px;
+        background-color: #fff;
+        border-radius: 8px;
+        padding: 15px;
+    }
+    
+    
+    .recipe-item:hover{
+        width: 230px;
+        text-align: center;
+        margin: 10px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 15px;
+        h3{
+           color: rgb(25, 25, 200);
+        }
+    }
+    
+    
+    .recipe-item img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+    
+    .recipe-item h3 {
+        font-size: 1.2rem;
+        color: #8e735b; /* نفس اللون البني */
+        margin-top: 10px;
+    }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        
+    
+        <h1>وجبات سريعة</h1>
+    </header>
+    <main>
+        <div class="quick-recipes">
+          <div class="recipe-item">
+            <img src="c:\Users\Mega Store\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\698D51A19D8A121CE581499D7B701668\صورة واتساب بتاريخ 2024-12-22 في 21.17.35_1c30a929.jpg" alt="برجر" />
+            <h3>برجر</h3>
+          </div>
+          <div class="recipe-item">
+            <img src="c:\Users\Mega Store\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\7F6FFAA6BB0B408017B62254211691B5\صورة واتساب بتاريخ 2024-12-22 في 21.17.35_7c990bc7.jpg" alt="بيتزا" />
+            <h3>بيتزا</h3>
+          </div>
+          <div class="recipe-item">
+            <img src="c:\Users\Mega Store\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\A3C65C2974270FD093EE8A9BF8AE7D0B\صورة واتساب بتاريخ 2024-12-22 في 21.17.34_9466d4e2.jpg" alt="بطاطس مقلية" />
+            <h3>بطاطس مقلية</h3>
+          </div>
+          <div class="recipe-item">
+            <img src="c:\Users\Mega Store\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\65B9EEA6E1CC6BB9F0CD2A47751A186F\صورة واتساب بتاريخ 2024-12-22 في 21.17.34_3d38f4fa.jpg" alt="ساندوتش" />
+            <h3>ساندوتش</h3>
+          </div>
+          <div class="recipe-item">
+            <img src="c:\Users\Mega Store\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\F0935E4CD5920AA6C7C996A5EE53A70F\صورة واتساب بتاريخ 2024-12-22 في 21.17.34_e05e2610.jpg" alt="كب كيك" />
+            <h3>كب كيك</h3>
+          </div>
+          <div class="recipe-item">
+            <img src="c:\Users\Mega Store\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\2723D092B63885E0D7C260CC007E8B9D\صورة واتساب بتاريخ 2024-12-22 في 21.17.35_df940718.jpg" alt="دجاج مقلي" />
+            <h3>دجاج مقلي</h3>
+          </div>
+          <div class="recipe-item">
+            <img src="c:\Users\Mega Store\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\A97DA629B098B75C294DFFDC3E463904\صورة واتساب بتاريخ 2024-12-22 في 21.17.34_47e301ac.jpg" alt="دونات" />
+            <h3>دونات</h3>
+          </div>
+          <div class="recipe-item">
+            <img src="c:\Users\Mega Store\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\5F93F983524DEF3DCA464469D2CF9F3E\صورة واتساب بتاريخ 2024-12-22 في 21.17.35_2b4c4175.jpg" alt="هوت دوج" />
+            <h3>هوت دوج</h3>
+          </div>
+          
+        </div>
+      </main>
+</body>
+</html>

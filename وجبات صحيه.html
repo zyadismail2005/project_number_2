@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الغذاء الصحي</title>
+    <style>
+        /* إعدادات عامة */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8f5; /* خلفية مريحة بلون أخضر فاتح */
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 2rem 0;
+        }
+
+        h2 {
+            color: #2d572c;
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+        }
+
+        .food-item {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            transition: transform 0.2s;
+        }
+
+        .food-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .food-item img {
+            width: 150px;
+            height: 150px;
+            border-radius: 15px;
+            object-fit: cover;
+        }
+
+        .food-item h3 {
+            color: #4CAF50;
+            margin-bottom: 0.5rem;
+        }
+
+        .food-item p {
+            color: #555;
+        }
+
+        /* استجابة للجوال */
+        @media (max-width: 768px) {
+            .food-item {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .food-item img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>الغذاء الصحي</h1>
+</header>
+
+<div class="container">
+    <h2>أفضل 10 أطعمة مفيدة للصحة</h2>
+
+    <div class="food-item">
+        <img src="Img/لوز.webp" alt="صورة اللوز">
+        <div>
+            <h3>1. اللوز</h3>
+            <p>اللوز مصدر غني بالدهون الصحية والبروتين والألياف. يحتوي على فيتامين E والمغنيسيوم، مما يعزز صحة القلب ويحسن الذاكرة.</p>
+        </div>
+    </div>
+
+    <div class="food-item">
+        <img src="Img\تفاح.webp" alt="صورة التفاح">
+        <div>
+            <h3>2. التفاح</h3>
+            <p>التفاح مليء بالألياف وفيتامين C، ويُعد مضاد أكسدة طبيعي يساعد في تعزيز صحة القلب والجهاز الهضمي والمناعة.</p>
+        </div>
+    </div>
+
+    <div class="food-item">
+        <img src="Img\بقوليات.webp" alt="صورة البقوليات">
+        <div>
+            <h3>3. البقوليات</h3>
+            <p>البقوليات غنية بالبروتين النباتي والألياف، وهي مصدر ممتاز للحديد والمغنيسيوم، مما يساعد على تعزيز صحة القلب وتنظيم مستويات السكر في الدم.</p>
+        </div>
+    </div>
+
+    <div class="food-item">
+        <img src="Img/توت بري.webp" alt="صورة التوت الأزرق">
+        <div>
+            <h3>4. التوت الأزرق</h3>
+            <p>يحتوي التوت الأزرق على مضادات أكسدة قوية مثل الأنثوسيانينات، مما يحسن الذاكرة ويعزز صحة القلب والجهاز المناعي.</p>
+        </div>
+    </div>
+
+    <div class="food-item">
+        <img src="Img/بروكلي.webp" alt="صورة البروكلي">
+        <div>
+            <h3>5. البروكلي</h3>
+            <p>البروكلي مليء بالفيتامينات، منها فيتامين C و K، ويحتوي على مواد كيميائية نباتية تعزز المناعة وتساعد في إزالة السموم من الجسم.</p>
+        </div>
+    </div>
+
+    <div class="food-item">
+        <img src="Img/سلمون.webp" alt="صورة السلمون">
+        <div>
+            <h3>6. السلمون</h3>
+            <p>السلمون غني بأحماض أوميغا 3 الدهنية التي تدعم صحة القلب، الدماغ والمفاصل. يُعتبر خيارًا رائعًا كمصدر بروتين صحي.</p>
+        </div>
+    </div>
+
+    <div class="food-item">
+        <img src="Img/سبانخ.jpeg" alt="صورة السبانخ">
+        <div>
+            <h3>7. السبانخ</h3>
+            <p>السبانخ مصدر غني بالفيتامينات A و C والبوتاسيوم، كما أنها تحتوي على مضادات أكسدة تساهم في تحسين صحة العين.</p>
+        </div>
+    </div>
+
+    <div class="food-item">
+        <img src="Img/بطاطا.webp" alt="صورة البطاطا الحلوة">
+        <div>
+            <h3>8. البطاطا الحلوة</h3>
+            <p>البطاطا الحلوة غنية بالبيتا كاروتين، وهو مضاد أكسدة قوي يحسن صحة الجلد والعينين، كما تحتوي على فيتامين A والألياف.</p>
+        </div>
+    </div>
+
+    <div class="food-item">
+        <img src="Img/عصير خضار.jpg" alt="صورة عصير الخضار">
+        <div>
+            <h3>9. عصير الخضراوات</h3>
+            <p>عصير الخضراوات مليء بالفيتامينات والمعادن، ويوفر دفعة سريعة من المغذيات مع محتوى منخفض من السعرات الحرارية.</p>
+        </div>
+    </div>
+
+    <div class="food-item">
+        <img src="Img/جنين القمح.webp" alt="صورة جنين القمح">
+        <div>
+            <h3>10. جنين القمح</h3>
+            <p>جنين القمح مليء بالفيتامينات B والألياف والمعادن مثل الزنك والمغنيسيوم، مما يجعله خيارًا رائعًا لزيادة القيمة الغذائية للوجبات.</p>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>وصفات ونصائح غذائية</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            margin: 0;
+            padding: 0;
+            background-color: #E8F5E9;
+            color: #333;
+        }
+        h1 {
+            color: #fff;
+            background-color: #2E8B57;
+            text-align: center;
+            padding: 15px;
+            margin: 0;
+            border-radius: 0 0 10px 10px;
+        }
+        h2 {
+            color: #fff;
+            background-color: #6A5ACD;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .recipe, .tips {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 700px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .ingredients, .steps, .tip {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f0f8ff;
+            border-radius: 5px;
+        }
+        .ingredients h3, .steps h3 {
+            color: #FF6347;
+            font-size: 1.2em;
+        }
+        .ingredients h3::before, .steps h3::before {
+            content: "• ";
+            color: #FF6347;
+            font-size: 1.5em;
+            margin-left: 5px;
+        }
+        .ingredients h3, .steps h3 {
+            margin: 0;
+            color: #444;
+        }
+        .tips h2 {
+            background-color: #32CD32;
+            padding: 15px;
+            border-radius: 5px;
+            color: #fff;
+        }
+        .tip {
+            background-color: #eaffea;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .image-container {
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 15px;
+        }
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+        .image-container img:hover {
+            transform: scale(1.1);
+        }
+        .enlarged-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        .enlarged-image img {
+            max-width: 90%;
+            max-height: 90%;
+        }
+    </style>
+</head>
+<body>
+    <h1>وصفات ونصائح غذائية</h1>
+
+    <!-- ساندويتش الدجاج بالمايونيز -->
+    <div class="recipe">
+        <h2>ساندويتش الدجاج بالمايونيز</h2>
+        <div class="image-container">
+            <img src="https://watanimg.elwatannews.com/image_archive/original_lower_quality/5131252011727628070.jpg" alt="ساندويتش الدجاج بالمايونيز" onclick="enlargeImage(this)">
+        </div>
+        <div class="ingredients">
+            <h3>المكونات</h3>
+            <h3>صدور دجاج مسلوقة ومفتتة</h3>
+            <h3>مايونيز</h3>
+            <h3>خبز</h3>
+            <h3>خس</h3>
+            <h3>طماطم</h3>
+        </div>
+        <div class="steps">
+            <h3>طريقة التحضير</h3>
+            <h3>اخلطي الدجاج المفروم مع المايونيز. ضعي الخليط بين شريحتي الخبز وأضيفي الخضروات.</h3>
+        </div>
+    </div>
+
+    <!-- سلطة الدجاج المشوي -->
+    <div class="recipe">
+        <h2>سلطة الدجاج المشوي</h2>
+        <div class="image-container">
+            <img src="https://watanimg.elwatannews.com/image_archive/original_lower_quality/6245727221727628071.jpg" alt="سلطة الدجاج المشوي" onclick="enlargeImage(this)">
+        </div>
+        <div class="ingredients">
+            <h3>المكونات</h3>
+            <h3>صدور دجاج مشوية</h3>
+            <h3>خس</h3>
+            <h3>طماطم</h3>
+            <h3>خيار</h3>
+            <h3>جزر</h3>
+            <h3>زيت زيتون</h3>
+            <h3>خل</h3>
+            <h3>ملح وفلفل</h3>
+        </div>
+        <div class="steps">
+            <h3>طريقة التحضير</h3>
+            <h3>قطعي الدجاج المشوي والخضروات. حضري الصلصة من زيت الزيتون والخل والملح والفلفل. اخلطي جميع المكونات وقدميها باردة.</h3>
+        </div>
+    </div>
+
+    <!-- مكرونة بالجبن واللحم المفروم -->
+    <div class="recipe">
+        <h2>مكرونة بالجبن واللحم المفروم</h2>
+        <div class="image-container">
+            <img src="https://watanimg.elwatannews.com/image_archive/original_lower_quality/11445949511727628037.jpg" alt="مكرونة بالجبن واللحم المفروم" onclick="enlargeImage(this)">
+        </div>
+        <div class="ingredients">
+            <h3>المكونات</h3>
+            <h3>مكرونة</h3>
+            <h3>لحم مفروم</h3>
+            <h3>صلصة طماطم</h3>
+            <h3>جبنة موزاريلا</h3>
+            <h3>بصل</h3>
+            <h3>ثوم</h3>
+        </div>
+        <div class="steps">
+            <h3>طريقة التحضير</h3>
+            <h3>اسلقي المكرونة، ثم اقلي اللحم المفروم مع البصل والثوم. أضيفي صلصة الطماطم والمكرونة واخلطي المكونات. رشي الجبن وادخلي الصينية الفرن حتى تذوب الجبنة.</h3>
+        </div>
+    </div>
+
+    <!-- نصائح غذائية -->
+    <div class="tips">
+        <h2>نصائح للحفاظ على نظام غذائي صحي</h2>
+        <div class="tip">
+            <h3>تنويع مصادر البروتين باستخدام اللحوم والدجاج الخالي من الدهون.</h3>
+        </div>
+        <div class="tip">
+            <h3>اختيار خبز الحبوب الكاملة بدلًا من الخبز الأبيض.</h3>
+        </div>
+        <div class="tip">
+            <h3>زيادة كمية الخضروات لتحسين القيمة الغذائية.</h3>
+        </div>
+        <div class="tip">
+            <h3>استخدام بدائل صحية للمايونيز مثل الزبادي اليوناني.</h3>
+        </div>
+        <div class="tip">
+            <h3>تناول وجبات متوازنة بكميات معتدلة وتجنب الإفراط في الأكل.</h3>
+        </div>
+    </div>
+
+    <!-- صورة مكبرة -->
+    <div class="enlarged-image" id="enlargedImage" onclick="closeEnlargedImage()">
+        <img id="enlargedImg" src="" alt="صورة مكبرة">
+    </div>
+
+    <script>
+        function enlargeImage(imgElement) {
+            var enlargedImage = document.getElementById('enlargedImage');
+            var enlargedImg = document.getElementById('enlargedImg');
+            enlargedImg.src = imgElement.src;
+            enlargedImage.style.display = 'flex';
+        }
+
+        function closeEnlargedImage() {
+            var enlargedImage = document.getElementById('enlargedImage');
+            enlargedImage.style.display = 'none';
+        }
+    </script>
+</body>
+</html>

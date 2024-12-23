@@ -1,0 +1,83 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #8e735b; /* بني فاتح */
+    color: white;
+    padding: 1px 0;
+    text-align: center;
+    border-radius: 25px; 
+}
+
+header h1{
+    font-size: 50px;
+}
+
+nav ul {
+    display: flex; /*الكود more flexable*/
+    justify-content: left; 
+    list-style: none; /* o بيشيل */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;/*بتشيل الخط الازرق*/
+    font-size: 25px;
+}
+
+nav ul li a:hover{
+    color: rgb(25, 25, 200);
+}
+
+main {
+    padding: 40px;
+    text-align: center;
+}
+
+.quick-recipes {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    display: grid;
+}
+
+.recipe-item {
+    width: 200px;
+    text-align: center;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+
+.recipe-item:hover{
+    width: 230px;
+    text-align: center;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    h3{
+       color: rgb(25, 25, 200);
+    }
+}
+
+
+.recipe-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.recipe-item h3 {
+    font-size: 1.2rem;
+    color: #8e735b; /* نفس اللون البني */
+    margin-top: 10px;
+}

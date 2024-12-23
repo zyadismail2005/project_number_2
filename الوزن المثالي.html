@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+    <title>وزنك المثالي</title>
+   
+</head>
+
+
+<body>
+  
+     <style>
+    General Reset
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background-color: #cffaf9; 
+        margin: 0;
+    }
+    
+    /* Header Styling */
+    .header {
+        background-color: #4CAF50; 
+        padding: 15px 20px;
+        color: white;
+    }
+    
+    .header-content {
+        display: flex; 
+        align-items: center; 
+        justify-content: space-between;
+        gap: 15px; 
+    }
+    
+    /* Title Styling */
+    .header-content h1 {
+        font-size: 24px;
+        color: white;
+        flex-grow: 1; 
+        text-align: center; 
+    }
+    
+    /* Link Styling */
+    .header-content a {
+        text-decoration: none; 
+        color: white; 
+        font-size: 16px;
+        font-weight: bold;
+        padding: 5px 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    
+    .header-content a:hover {
+        background-color: white; 
+        color: #ff4500; 
+    }
+    
+    /* Button Styling */
+    .header-content button {
+        background-color: #ffd700; 
+        color: #ff4500; 
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    .header-content button:hover {
+        background-color: white; 
+        color: #ff4500; 
+    }
+    
+    .image-container img {
+        max-width: 100%; 
+        height: auto; 
+        margin: 30px;
+        border-radius: 10px;
+    
+    }
+    
+    
+    main {
+        text-align: center;
+        margin-top: 50px;
+        margin: 20px;
+        padding: 20px;
+        background-color: #ffe4b3; 
+        border-radius: 15px; 
+       
+    }
+    
+    /* Heading */
+    main h2 {
+        font-size: 28px;
+        color: #ff4500; 
+        margin-bottom: 20px;
+    }
+    
+    /* Input Field */
+     main input {
+        width: 60%; 
+        padding: 10px;
+        font-size: 16px;
+        border: 2px solid #ff4500; 
+        border-radius: 5px;
+        margin-bottom: 20px;
+    } 
+    
+    /* Calculate Button */
+    main button {
+        background-color: #ff4500; 
+        color: white; 
+        font-size: 18px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    main button:hover {
+        background-color: #e63e00; 
+    }
+    
+    /* Result Text */
+    main p {
+        font-size: 20px;
+        margin-top: 20px;
+        color: #333; 
+    }
+    
+    
+    button {
+        background-color: #ffd700; 
+        color: #ff4500; 
+        font-size: 16px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 10px;
+        margin: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    button:hover {
+        background-color: #fff; 
+        color: #ff4500; 
+    }
+    
+    
+    button:first-of-type {
+        float: left; 
+    }
+    
+    button:last-of-type {
+        float: right; 
+    }
+    .ibm{
+        margin: 50px;
+    }
+</style>
+ 
+     <div class="header">
+        <div class="header-content">
+            <h1 >الوزن المثالي بالنسبه للطول</h1>
+        </div>
+    </div>
+    
+    
+
+  
+    <div class="image-container">
+        <img src="https://www.healthifyme.com/blog/wp-content/uploads/2023/02/height-weight-chart-1024x683.jpg" alt="height-weight">
+    </div>
+    
+    <div class="table">
+        <h3 style="margin-left: 60px;">الوزن المثالي بالنسبه للطول للرجال والنساء </h3>
+        <table style="width:80% ; text-align: center; margin-left:60px;" border="5">
+            <tr>
+                <th>Height</th>
+                <th>Female</th>
+                <th>Male</th>
+            </tr>
+            <tr>
+                <td>4′ 6″<br> (137 cm)</td>
+                <td>63/77 lb <br>(28.5/34.9 kg)</td>
+                <td>63/77 lb <br>(28.5/34.9 kg)</td>
+            </tr>
+            <tr>
+                <td>4′ 7″ <br>(140 cm)</td>
+                <td>68/83 lb <br>(30.8/37.6 kg)</td>
+                <td>68/84 lb<br> (30.8/38.1 kg)</td>
+            </tr>
+            <tr>
+                <td>4′ 8″ <br>(142 cm)</td>
+                <td>72/88 lb <br>(32.6/39.9 kg)</td>
+                <td>74/90 lb <br>(33.5/40.8 kg)</td>
+            </tr>
+            <tr>
+                <td>4′ 9″ <br>(145 cm)</td>
+                <td>77/94 lb <br>(34.9/42.6 kg)</td>
+                <td>79/97 lb <br>(35.8/43.9 kg)</td>
+            </tr>
+            <tr>
+                <td>4′ 10″ <br>(147 cm)</td>
+                <td>81/99 lb <br>(36.4/44.9 kg)</td>
+                <td>85/103 lb <br>(38.5/46.7 kg)</td>
+            </tr>
+            <tr>
+                <td>4′ 11″ <br>(150 cm)</td>
+                <td>86/105 lb <br>(39/47.6 kg)</td>
+                <td>90/110 lb<br> (40.8/49.9 kg)</td>
+            </tr>
+            <tr>
+                <td>5′ 0″ <br>(152 cm)</td>
+                <td>90/110 lb <br>(40.8/49.9 kg)</td>
+                <td>95/117 lb <br>(43.1/53 kg)</td>
+            </tr>
+            <tr>
+                <td>5′ 1″<br> (155 cm)</td>
+                <td>95/116 lb <br>(43.1/52.6 kg)</td>
+                <td>101/123 lb <br>(45.8/55.8 kg)</td>
+            </tr>
+            <tr>
+                <td>5′ 2″<br> (157 cm)</td>
+                <td>99/121 lb (44.9/54.9 kg)</td>
+                <td>106/130 lb <br>(48.1/58.9 kg)</td>
+            </tr>
+            <tr>
+                <td>5′ 3″ <br>(160 cm)</td>
+                <td>104/127 lb <br>(47.2/57.6 kg)</td>
+                <td>112/136 lb <br>(50.8/61.6 kg)</td>
+            </tr>
+            <tr>
+                <td>5′ 4″ <br>(163 cm)</td>
+                <td>108/132 lb <br>(49/59.9 kg)</td>
+                <td>117/143 lb <br>(53/64.8 kg)</td>
+            </tr>
+            <tr>
+                <td>5′ 5″ <br>(165 cm)</td>
+                <td>113/138 lb <br>(51.2/62.6 kg)</td>
+                <td>122/150 lb <br>(55.3/68 kg)</td>
+            </tr>
+            <tr>
+                <td>5′ 6″ <br>(168 cm)</td>
+                <td>117/143 lb <br>(53/64.8 kg)</td>
+                <td>128/156 lb <br>(58/70.7 kg)</td>
+            </tr>
+            <tr>
+                <td>5′ 7″ <br>(170 cm)</td>
+                <td>122/149 lb<br> (55.3/67.6 kg)</td>
+                <td>133/163 lb <br>(60.3/73.9 kg)</td>
+            </tr>
+            <tr>
+                <td>5′ 8″ <br>(173 cm)</td>
+                <td>126/154 lb <br>(57.1/69.8 kg)</td>
+                <td>139/169 lb <br>(63/76.6 kg)</td>
+            </tr>
+            <tr>
+                <td>5′ 9″ <br>(175 cm)</td>
+                <td>131/160 lb <br>(59.4/72.6 kg)</td>
+                <td>144/176 lb <br>(65.3/79.8 kg)</td>
+            </tr>
+            <tr>
+                <td>5′ 10″ <br>(178 cm)</td>
+                <td>135/165 lb<br> (61.2/74.8 kg)</td>
+                <td>149/183 lb <br>(67.6/83 kg)</td>
+            </tr>
+            <tr>
+                <td>5′ 11″ <br>(180 cm)</td>
+                <td>140/171 lb <br>(63.5/77.5 kg)</td>
+                <td>155/189 lb <br>(70.3/85.7 kg)</td>
+            </tr>
+            <tr>
+                <td>6′ 0″ <br>(183 cm)</td>
+                <td>144/176 lb <br>(65.3/79.8 kg)</td>
+                <td>160/196 lb <br>(72.6/88.9 kg)</td>
+            </tr>
+            <tr>
+                <td>6′ 1″ <br>(185 cm)</td>
+                <td>149/182 lb <br>(67.6/82.5 kg)</td>
+                <td>166/202 lb <br>(75.3/91.6 kg)</td>
+            </tr>
+            <tr>
+                <td>6′ 2″ <br>(188 cm)</td>
+                <td>153/187 lb<br> (69.4/84.8 kg)</td>
+                <td>171/209 lb <br>(77.5/94.8 kg)</td>
+            </tr>
+            <tr>
+                <td>6′ 3″ <br>(191 cm)</td>
+                <td>158/193 lb <br>(71.6/87.5 kg)</td>
+                <td>176/216 lb <br>(79.8/98 kg)</td>
+            </tr>
+            <tr>
+                <td>6′ 4″ <br>(193 cm)</td>
+                <td>162/198 lb <br>(73.5/89.8 kg)</td>
+                <td>182/222 lb <br>(82.5/100.6 kg)</td>
+            </tr>
+            <tr>
+                <td>6′ 5″ <br>(195 cm)</td>
+                <td>167/204 lb <br>(75.7/92.5 kg)</td>
+                <td>187/229 lb <br>(84.8/103.8 kg)</td>
+            </tr>
+        </table>
+    </div>
+    <div class="ibm">
+        <h3 style="font-size: 150%;">يمكنك حساب وزنك المثالي باستخدام الصيغة التالية:</h3><br>
+        <p>- الوزن بالرطل = 5 × مؤشر كتلة الجسم + (مؤشر كتلة الجسم ÷ 5) × (الطول بالبوصة - 60)<br><br>
+           - الوزن بالكيلوجرام = 2.2 × مؤشر كتلة الجسم + (3.5 × مؤشر كتلة الجسم) × (الطول بالمتر - 1.5)</p>
+    </div>
+    
+    <main>
+        <h2>احسب وزنك المثالي</h2>
+        <input type="number" id="height" placeholder="أدخل طولك (سم)">
+        <button onclick="calculateIdealWeight()">احسب</button>
+        <p id="result"></p>
+    </main>
+    
+    <script>
+    function calculateIdealWeight() {
+        const height = document.getElementById('height').value;
+        const idealWeight = (height - 100) * 0.9;
+        document.getElementById('result').innerText = 'وزنك المثالي هو: ' + idealWeight.toFixed(2) + ' كغ';
+    }
+    </script>
+    
+   
+</body>
+
+</html>

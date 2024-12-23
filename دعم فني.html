@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ar">
+    
+
+<head>
+    <style>
+    
+body {
+    font-family: 'Arial', sans-serif;
+    direction: rtl;
+    text-align: right;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    animation: backgroundFade 5s infinite alternate; 
+}
+
+
+header {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 16px;
+    text-align: center;
+    animation: slideDown 1.5s ease-in-out;
+}
+
+
+main {
+    width: 100%;
+    padding: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+
+form {
+    width: 50%;
+    margin: 20px auto;
+    padding: 15px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 1, 1);
+    border-radius: 16px;
+    animation: scaleIn 1.5s ease-in-out;
+}
+
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+    animation: slideUp 1s ease-in-out;
+}
+
+input:focus, textarea:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.7);
+}
+
+
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+
+#thankYouMessage {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    color: #e40e0e;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes scaleIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes backgroundFade {
+    0% {
+        background-color: #f9f9f9;
+    }
+    100% {
+        background-color: #e3f2fd;
+    }
+}
+
+    </style>
+
+    <title>نموذج التواصل</title>
+    
+</head>
+<body>
+    <header>
+        <h1>الدعم الفني</h1>
+    </header>
+    <main>
+       
+        <form id="contactForm">
+            <input type="text" name="name" placeholder="اسمك" required><br>
+            <input type="email" name="email" placeholder="بريدك الإلكتروني" required><br>
+            <textarea name="message" placeholder="رسالتك" required></textarea><br>
+            <button type="submit">إرسال</button>
+        </form>
+        
+        <div id="thankYouMessage">
+            شكرًا لك! لقد استلمنا رسالتك وسنقوم بالرد قريبًا.
+        </div>
+    </main>
+
+    <script>
+      
+        const form = document.getElementById("contactForm");
+        const thankYouMessage = document.getElementById("thankYouMessage");
+
+       
+        form.addEventListener("submit", function(event) {
+            event.preventDefault(); 
+
+         
+            form.style.display = "none";
+            thankYouMessage.style.display = "block";
+        });
+    </script>
+</body>
+</html>
